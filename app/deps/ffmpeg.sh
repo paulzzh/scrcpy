@@ -80,6 +80,7 @@ else
         --enable-zlib \
         --enable-muxer=matroska \
         --enable-muxer=mp4 \
+        --enable-muxer=flv \
         --enable-muxer=opus \
         --enable-muxer=flac \
         --enable-muxer=wav \
