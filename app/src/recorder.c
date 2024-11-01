@@ -145,11 +145,8 @@ sc_recorder_open_output_file(struct sc_recorder *recorder) {
         return false;
     }
 
-    AVDictionary *options = NULL;
-    av_dict_set(&options, "listen", "1", 0); // Enable listening
-
     int ret = avio_open2(&recorder->ctx->pb, RTMP_URL,
-                        AVIO_FLAG_WRITE, NULL, &options);
+                        AVIO_FLAG_WRITE, NULL, NULL);
     if (ret < 0) {
         LOGE("Failed to open output file: %s", recorder->filename);
         avformat_free_context(recorder->ctx);
