@@ -74,7 +74,7 @@ else
         --enable-decoder=aac \
         --enable-decoder=flac \
         --enable-decoder=png \
-        --enable-protocol=file \
+        --enable-protocol=file,rtmp \
         --enable-demuxer=image2 \
         --enable-parser=png \
         --enable-zlib \
