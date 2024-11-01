@@ -63,7 +63,7 @@ else
         --disable-postproc \
         --disable-avfilter \
         --disable-avdevice \
-        --disable-network \
+        --enable-network \
         --disable-everything \
         --enable-swresample \
         --enable-decoder=h264 \
@@ -74,7 +74,7 @@ else
         --enable-decoder=aac \
         --enable-decoder=flac \
         --enable-decoder=png \
-        --enable-protocol=file,rtmp \
+        --enable-protocol=file,tcp,rtmp \
         --enable-demuxer=image2 \
         --enable-parser=png \
         --enable-zlib \
