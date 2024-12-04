@@ -56,7 +56,7 @@ else
         --disable-swscale
         --disable-postproc
         --disable-avfilter
-        --disable-network
+        --enable-network
         --disable-everything
         --disable-vulkan
         --disable-vaapi
@@ -70,12 +70,13 @@ else
         --enable-decoder=aac
         --enable-decoder=flac
         --enable-decoder=png
-        --enable-protocol=file
+        --enable-protocol=file,tcp,rtmp
         --enable-demuxer=image2
         --enable-parser=png
         --enable-zlib
         --enable-muxer=matroska
         --enable-muxer=mp4
+        --enable-muxer=flv
         --enable-muxer=opus
         --enable-muxer=flac
         --enable-muxer=wav
